@@ -62,11 +62,12 @@ _WINDOWS_11 = {
 
 _PLATFORM_SPECIFIC_CONFIGS_11 = {
     "linux": {
-        "full_version": "11.3.rel1",
+        "full_version": "11.3.rel1", # fake for now
         "remote_compiler": {
-            "url":"https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/11.3.rel1/binrel/arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi.tar.xz",
-            "sha256": "d420d87f68615d9163b99bbb62fe69e85132dc0a8cd69fca04e813597fe06121",
-            "strip_prefix": "arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi",
+            "url" : "file:///home/hgiang-sonatus/gcc-9.2.0-Earmv7-eabi-i686-linux-b1649-gaf57174.tar.gz",
+            #"url":"https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/11.3.rel1/binrel/arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi.tar.xz",
+            #"sha256": "d420d87f68615d9163b99bbb62fe69e85132dc0a8cd69fca04e813597fe06121",
+            #"strip_prefix": "arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi",
         },
     },
     "windows": _WINDOWS_11,
