@@ -36,7 +36,7 @@ _PLATFORM_SPECIFIC_CONFIGS_9 = {
             # "url":"https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2",
             # "sha256": "bcd840f839d5bf49279638e9f67890b2ef3a7c9c7a9b25271e83ec4ff41d177a",
             # "strip_prefix": "gcc-arm-none-eabi-9-2019-q4-major",
-            "url" : "file:///home/ha.giang/gcc-9.2.0-Earmv7-eabi-i686-linux-b1649-gaf57174.tar.gz",
+            "url" : "file:///home/hgiang-sonatus/gcc-9.2.0-Earmv7-eabi-i686-linux-b1649-gaf57174.tar.gz",
             "sha256" : "61dd648795bdf66bd9cdeacec0b1e965cd3e9ae14ed37cd627b0294d4a3d86dd",
             "strip_prefix":"gcc-9.2.0-Earmv7-eabi/i686-linux",
         },
@@ -63,6 +63,17 @@ _WINDOWS_11 = {
     },
 }
 
+_PLATFORM_SPECIFIC_CONFIGS_10 = {
+    "linux": {
+        "full_version": "10.2.0", # fake for now
+        "remote_compiler": {
+            "url":"file:///home/hgiang-sonatus/NXP_GCC10.2_eARMv7_b1728_g5963bc8.tar.gz",
+            "sha256": "9a64cc9e495a8ba513f22b77e30492020471a3cf64d15cd136b4708083f97294",
+            "strip_prefix": "gcc-10.2-arm32-eabi",
+        },
+    }
+}
+
 _PLATFORM_SPECIFIC_CONFIGS_11 = {
     "linux": {
         "full_version": "11.3.rel1", # fake for now
@@ -87,6 +98,7 @@ _PLATFORM_SPECIFIC_CONFIGS_11 = {
 
 TOOLCHAIN_VERSIONS = {
     "9": _PLATFORM_SPECIFIC_CONFIGS_9,
+    "10": _PLATFORM_SPECIFIC_CONFIGS_10,
     "11": _PLATFORM_SPECIFIC_CONFIGS_11,
 }
 
