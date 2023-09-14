@@ -84,6 +84,10 @@ def _gcc_arm_none_toolchain_config_info_impl(ctx):
             path = "gcc_wrappers/{os}/gcc",
         ),
         tool_path(
+            name = "as",
+            path = "gcc_wrappers/{os}/as",
+        ),
+        tool_path(
             name = "ld",
             path = "gcc_wrappers/{os}/ld",
         ),
